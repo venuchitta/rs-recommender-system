@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+	<p> <%=  'No Recommendations to display!' if @items && @items.size == 0 %></p>
+	<table class="pure-table pure-table-bordered">
+		<%= display_collection(@items) %>
+	</table>
+	<%= link_to "Go Back", root_path %>
+</body>
+</html>

@@ -1,0 +1,26 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.search{
+ margin-top: 50px;
+ h2{
+      text-align: center;
+    }
+    form.custom .custom.dropdown{
+      height: 45px;
+    }
+    label{
+      margin-bottom: 10px;
+    }
+    form.custom .custom.dropdown{
+      padding-top: 5px;
+    }
+    form.custom .custom.dropdown .selector{
+      top: 5px;
+    }
+    .button{
+      height: 45px;
+      margin-top:25px; 
+    }
+  }
+  

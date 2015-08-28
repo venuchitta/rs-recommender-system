@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div id = "table_recommend">
+		<h1> RS Recommenders</h1>
+		<label class="label">SELCT USER NAME AND RECOMMENDER STRATEGY FOR THE USER</label>
+ 	 	<%= form_tag("/users/recommend", method: "get", html: {class: 'form_data'}) do %>
+			<%= select_tag(:user_id, options_for_select(get_prompt(@users)),{class: "styled-select slate"})%>
+			<%= select_tag(:recommend, options_for_select([["Similar Category","category"],["Similar User","user"]]), {class: "styled-select slate"})%>
+      <%= submit_tag("Get Recommendations", {id: "btn-4", class: "btn-4" }) %>
+    <% end %>
+	</div>
+</body>
+</html>
+
+
