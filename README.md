@@ -45,7 +45,8 @@ bundle exec rake db:drop
 
 ## OOPS design
 
-* Used Strategy Design pattern to design the recommender algorthm as they have same interface and the algorithm can be chosen at runtime based on the option user chooses in the view. The algorithms are in app/services directory
+* Used Strategy Design pattern to design the recommender algorthm as they have same interface and the algorithm can be chosen at runtime based on the option user chooses in the view
+* The algorithms are in app/services directory
 * Furthur, regarding the design all the algorithm classes can extend the base class and would have raised an error if they  didn't implement the base class method recommend. But to keep the design simple I didnt do that
 
 ## Some Other insights
